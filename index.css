@@ -1,0 +1,155 @@
+/* Reseter */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    background-image: url(img/pexels-airam-datoon-13106582.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 600px;
+
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.imgDiv {
+    width: 40%;
+}
+
+.capsulaHeaderH2 {
+    font-size: larger;
+}
+
+.fit {
+    color: rgb(0, 156, 36);
+}
+
+.SpnDesc {
+    font-size: small;
+    color: rgba(255, 255, 255, 0.772);
+}
+
+.descP p {
+    color: rgba(255, 255, 255, 0.772);
+}
+
+button {
+    padding: 20px;
+    color: white;
+    background-color: rgb(0, 156, 36);
+    border: solid black;
+    box-shadow: 0px -4px 5px rgb(0, 83, 20) inset;
+    border-radius: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    box-shadow: none;
+    border: solid rgb(0, 156, 36);
+}
+
+
+/* section */
+
+.sectionBanner {
+    height: 150px;
+    background-color: rgb(0, 156, 36);
+    color: white;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    z-index: 1;
+    
+}
+
+.divSections {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+
+}
+
+.divSection1,
+.divSection2,
+.divSection3 {
+    margin: 40px;
+    width: 120px;
+   
+}
+.divSection1  h3,.divSection2  h3, .divSection3  h3{
+    font-weight: 100;
+}  
+.btnCard{
+    align-self: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+
+/* main */
+
+main{
+    background-color: #dcdcdc;
+}
+.card1{
+    width: 400px;
+    height: 500px;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    margin: 0px auto;
+    position: relative;
+    top: -100px;
+    border: 1px solid white;
+    z-index: 0;
+}
+.autonomia{
+    width: 100%;
+    margin: auto;
+
+}
+.longe{
+    color:rgb(0, 156, 36) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px)
+{
+    .divSection1  h3,.divSection2  h3, .divSection3  h3{
+        color: rgb(0, 156, 36) ;
+    } 
+}
