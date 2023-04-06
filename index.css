@@ -6,9 +6,14 @@
 }
 
 /* Header */
+
+body{
+    background-color: black;
+}
 header {
     background-image: url(img/pexels-airam-datoon-13106582.jpg);
     background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-color: black;
     color: white;
@@ -60,6 +65,10 @@ button:hover {
     border: solid rgb(0, 156, 36);
 }
 
+#planoE {
+    margin-top: 140px;
+}
+
 
 /* section */
 
@@ -71,7 +80,7 @@ button:hover {
     width: 100%;
     flex-direction: column;
     z-index: 1;
-    
+
 }
 
 .divSections {
@@ -79,7 +88,7 @@ button:hover {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    
+
 
 }
 
@@ -87,26 +96,31 @@ button:hover {
 .divSection2,
 .divSection3 {
     margin: 40px;
-    width: 120px;
-   
+    width: 140px;
+    font-size: 20px;
 }
-.divSection1  h3,.divSection2  h3, .divSection3  h3{
+
+.divSection1 h3,
+.divSection2 h3,
+.divSection3 h3 {
     font-weight: 100;
-}  
-.btnCard{
+}
+
+.btnCard {
     align-self: center;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
 }
 
 
 
 /* main */
 
-main{
-    background-color: #dcdcdc;
+main {
+    background-color: #696969;
 }
-.card1{
+
+.card1 {
     width: 400px;
     height: 500px;
     background-color: black;
@@ -118,16 +132,164 @@ main{
     border: 1px solid white;
     z-index: 0;
 }
-.autonomia{
+
+.autonomia {
     width: 100%;
+    margin: 5px auto -5px;
+    padding: 40px 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.autonomiaSpn {
+    color: rgb(0, 156, 36)
+}
+
+.longe {
+    color: rgb(0, 156, 36);
+}
+
+li {
+    list-style: circle;
+}
+
+.descQuad {
+    background-color: black;
+    height: 1000px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quad {
+    background-color: black;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.507);
+    width: 70vw;
+    margin: 10px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.quad h1 {
+    font-size: 55pt;
+    margin: 0px 10px;
+}
+
+.depoimento {
+    background-color: #eee;
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.AntesDepois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100vw;
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
+.quadAntes {
+    width: 80%;
+    height: 200px;
+    background-color: #f3f3f3;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.pro {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.aluna {
+    padding: 20px;
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ftA {
+    display: none;
+}
+
+
+
+.section1 {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.mensal {
+    width: 300px;
+    height: 500px;
+    background-color: #7d7d7d;
+    padding: 10px;
+    margin: auto;
+    
+}
+
+.mensal h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.mensal li {
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.trimestral {
+    width: 300px;
+    height: 500px;
+    background-color: #7d7d7d;
+    padding: 30px;
     margin: auto;
 
+
 }
-.longe{
-    color:rgb(0, 156, 36) ;
+.trimestral h1{
+    font-size: 50px;
+    margin-bottom: 50px;
 }
 
 
+.trimestral li {
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h5{
+    text-decoration: line-through;
+    color: rgb(149, 54, 54);
+}
+/* {
+    margin-bottom: 50px;
+} */
 
 
 
@@ -147,9 +309,31 @@ main{
 
 
 
-@media (max-width: 1100px)
-{
-    .divSection1  h3,.divSection2  h3, .divSection3  h3{
-        color: rgb(0, 156, 36) ;
-    } 
+
+@media (max-width: 1100px) {
+
+    .divSection1 h3,
+    .divSection2 h3,
+    .divSection3 h3 {
+        color: rgb(0, 156, 36);
+    }
+
+    .ftA {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .AntesDepois {
+        display: none;
+    }
+}
+
+@media (min-width: 700px) {
+
+    .ftA {
+        display: none;
+    }
 }
